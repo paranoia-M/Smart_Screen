@@ -17,7 +17,7 @@ import   "./index.css";
      setCurUrl(cur)
    }
 
-   console.log(82, curUrl == '/smart');
+   console.log(82, curUrl);
 
   return (
     <header className="top">
