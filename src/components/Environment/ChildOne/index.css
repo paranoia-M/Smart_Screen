@@ -1,0 +1,18 @@
+.one {
+  
+}
+.one .one_top{
+  display: flex;
+}
+.one .one_top .one_top_tit{
+  color: #1e1c25;
+  font-size: 34px;
+  font-weight: bold;
+
+}
+.one .one_top .one_top{
+ width: 50%;
+}
+.one .one_top .one_top_right{
+ width: 50%;
+}

@@ -1,0 +1,58 @@
+.box {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#bfd1b1, white);
+}
+.box .container {
+  margin-top: 20px;
+  width:80vw;
+  height: 100vh;
+  background-color: rgb(199, 234, 214);
+  display: flex;
+  padding-top: 0;
+  border-radius: 10px;
+
+}
+.box .container .con_main {
+  flex: 1;
+  padding-top: 60px;
+}
+.box .container .con_tab {
+flex-basis: 140px;
+background-color: rgb(238, 238, 238);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.box .container .con_tab .con_tab_box {
+/* background-color: rgb(129, 165, 165); */
+height:100%;
+width: 100%;
+font-size: 18px;
+font-weight: bold;
+color: rgb(24,134,25);
+text-align: center;
+border-bottom: 1px solid rgb(186, 186, 186) ;
+position: relative;
+}
+.box .container .con_tab .con_tab_box .con_tab_box_item {
+
+	position: absolute;
+  padding-top: 30px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.box .container .con_tab .con_tab_box .con_tab_box_item .con_tab_box_item_t {
+/* margin-top: 10px; */
+}
+
+.active {
+  background-color: #83ad28;
+  color:#fff;
+  box-shadow: 10px 5px 5px rgb(150, 146, 146);
+}

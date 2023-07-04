@@ -1,0 +1,12 @@
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  width: 100vw;
+  height:80px;
+  background: linear-gradient(#eef1eb, #91ae84);
+  box-shadow: #999;
+  /* #91ae84 */
+}

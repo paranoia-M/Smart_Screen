@@ -1,7 +1,16 @@
-import React from 'react'
-
+import React, { Fragment } from 'react'
+import './index.css'
+import MyFooter from '../MyFooter'
 export default function () {
   return (
-    <div>智慧党建</div>
+    <Fragment>
+      <div className='box'>
+      <div className='container'>
+       智慧党建
+      </div>
+    </div>
+      <MyFooter></MyFooter>
+    </Fragment>
+
   )
 }

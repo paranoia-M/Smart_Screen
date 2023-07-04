@@ -1,7 +1,16 @@
-import React from 'react'
-
-export default function index() {
+import React, { Fragment } from 'react'
+import './index.css'
+import MyFooter from '../MyFooter'
+export default function () {
   return (
-    <div>新闻发布</div>
+    <Fragment>
+      <div className='box'>
+      <div className='container'>
+        新闻发布
+      </div>
+    </div>
+      <MyFooter></MyFooter>
+    </Fragment>
+
   )
 }
