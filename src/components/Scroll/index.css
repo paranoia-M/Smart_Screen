@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgb(50, 35, 177);
+  padding: 4px;
+  margin: 0 10px;
+  border-radius: 6px;
+}
+
+.list_ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  overflow: hidden;
+}
+.list_ul:span {
+  float: left;
+}
+.list_ul .list_li {
+  font-size: 14px;
+  margin: 4px;
+  padding: 6px;
+}
+.deep {
+  background-color: rgb(8, 10, 39);
+}
+.shallow {
+  background-color: rgb(10, 16, 62);
+}
+/* 8  10 39  10 16 62*/
