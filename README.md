@@ -2,4 +2,4 @@
 
 在线访问地址：http://paranoia.hyf.io/
 
-12
+1244
