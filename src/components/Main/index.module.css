@@ -1,0 +1,25 @@
+
+
+.main {
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  /* margin-top: 60px; */
+  padding-top: 60px;
+  background-size: cover;
+  width: 100vw;
+  height:100vh;
+  background-color: rgb(8, 12, 23);
+  display: flex;
+
+}
+.main > div {
+  /* display: flex; */
+  background: url('@/assets/pageBg.png') center center no-repeat;
+  justify-content: space-between;
+  height:100%;
+  color:#fff;
+}
+.center_page {
+  flex:1
+}

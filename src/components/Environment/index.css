@@ -2,23 +2,29 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(#bfd1b1, white);
+  padding-top: 60px;
+  height: 100%;
+
+
 }
 .box .container {
   margin-top: 20px;
   width:80vw;
-  height: 100vh;
-  background-color: rgb(199, 234, 214);
+  /* height: 100%; */
+  background-color: rgb(255, 255, 255);
   display: flex;
   padding-top: 0;
   border-radius: 10px;
 
+
 }
-.box .container .con_main {
+.box .container .con_mains {
   flex: 1;
   padding-top: 60px;
 }
 .box .container .con_tab {
 flex-basis: 140px;
+height: 600px;
 background-color: rgb(238, 238, 238);
 border-radius: 10px;
 display: flex;
@@ -40,7 +46,7 @@ position: relative;
 .box .container .con_tab .con_tab_box .con_tab_box_item {
 
 	position: absolute;
-  padding-top: 30px;
+  padding-top: 60px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -48,7 +54,7 @@ position: relative;
 	margin: auto;
 }
 .box .container .con_tab .con_tab_box .con_tab_box_item .con_tab_box_item_t {
-/* margin-top: 10px; */
+margin-top: 20px;
 }
 
 .active {

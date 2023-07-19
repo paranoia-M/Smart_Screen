@@ -5,8 +5,10 @@
   align-items: center;
   bottom: 0;
   width: 100vw;
-  height:80px;
   background: linear-gradient(#eef1eb, #91ae84);
   box-shadow: #999;
+  position: sticky;
+  top: calc(100% - 80px);
+  height: 60px;
   /* #91ae84 */
 }

@@ -14,11 +14,17 @@
 
 }
 .top .top_tit {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   color: #fff;
   margin-right: 100px;
   padding-left: 10px;
+ 
+
+
+}
+.top .top_tit::after {
+ 
 }
 .link{
 
@@ -29,8 +35,8 @@
 }
 .activity {
   /* text-decoration: underline; */
-  border-bottom:4px solid #DC143C;
-  color:#DC143C;
+  border-bottom:4px solid #0b2515;
+  color:#0b2515;
   font-weight: bold;
   
 

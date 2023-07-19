@@ -4,6 +4,7 @@ import BrowseCategories from './charts/BrowseCategories';
 import UserIdentityCategory from './charts/UserIdentityCategory';
 import OfflinePortal from './charts/OfflinePortal';
 import Feedback from './charts/Feedback';
+import styles from './index.module.css'
 import { ModuleTitle } from '@/style/globalStyledSet';
 
 
@@ -93,23 +94,23 @@ class index extends PureComponent {
   render() {
     const { offline, browseCategories, userIdentityCategory } = this.state;
     return (
-      <div className='right_page' style={{width:'26%'}}>
-        <div className='right_top_box'>
-          <div className='right-top' style={{marginTop:'10px'}}>
+      <div className={styles.right_page} style={{width:'26%'}}>
+        <div className={styles.right_top_box}>
+          <div className={styles.right_top} style={{marginTop:'10px'}}>
             <ModuleTitle>
-              <i className='iconfont'>&#xe7f7;</i>
+              <i className={styles.iconfont}>&#xe7f7;</i>
               <span>生态分布</span>
             </ModuleTitle>
 
-            <div className='right-top-content'>
+            <div className={styles.right_top_content}>
               <BrowseCategories
                 style={{float:'left'}}
                 browseCategories={browseCategories}></BrowseCategories>
-              <div className='right-top-svg' style={{marginLeft:'210px',marginTop:'-160px'}}>
+              <div className={styles.right_top_svg} style={{marginLeft:'210px',marginTop:'-160px'}}>
                    <img
                 alt='地球'
                 style={{width:'140px'}}
-                className='earth-gif'
+                className={styles.earth_gif}
                 src={require('@/assets/images/earth-rotate.gif')}
               />
               </div>
@@ -117,7 +118,7 @@ class index extends PureComponent {
           </div>
         </div>
 
-        <div className='right_center_box' style={{marginTop:'100px',marginBottom:'20px',marginBottom:'50px'}}>
+        <div className={styles.right_center_box} style={{marginTop:'100px',marginBottom:'20px',marginBottom:'50px'}}>
           <ModuleTitle>
             <i className='iconfont'>&#xe7fd;</i>
             <span >环境影响因素</span>
@@ -126,26 +127,26 @@ class index extends PureComponent {
             userIdentityCategory={userIdentityCategory}></UserIdentityCategory>
         </div>
      
-        <div className='right_bottom_box'>
+        <div className={styles.right_bottom_box}>
           <BorderBox13
-            style={{height:'400px'}}
-            className='right-bottom-borderBox13'>
-            <div className='right-bottom' style={{marginTop:'20px',marginBottom:'20px'}}>
-              <ModuleTitle >
-                <i className='iconfont'>&#xe790;</i>
-                <span style={{marginTop:'20px'}}>今日环境指数</span>
+            style={{height:'470px'}}
+            className={styles.right_bottom_borderBox13}>
+            <div className={styles.right_bottom} style={{marginTop:'20px',marginBottom:'20px'}}>
+              <ModuleTitle style={{paddingTop:'40px'}}>
+                <i className={styles.iconfont}>&#xe790;</i>
+                <span >今日环境指数</span>
               </ModuleTitle>
               {/* 反馈 */}
-              <div className='feedback-box' style={{
+              <div className={styles.feedback_box} style={{
                 display: 'flex', justifyContent: 'space-around',
               alignItems:'center'}}>
                 {offline
                   ? offline.feedback.map((item, index) => {
                       return (
                         <div
-                          className='feedback-box-item' key={index}>
+                          className={styles.feedback_box_item} key={index}>
                           <Feedback FeedbackData={item}></Feedback>
-                          <span className='dis-text' style={{
+                          <span className={styles.dis_text} style={{
                                fontWeight: 'bold',
                               //  marginTop: '10px',
                             color: '#272663',
@@ -159,7 +160,7 @@ class index extends PureComponent {
                   : ''}
               </div>
               {/* 门店 */}
-              <div className='offline-portal-box' style={{marginTop:'40px'}}>
+              <div className={styles.offline_portal_box} style={{marginTop:'40px'}}>
                 {offline ? (
                   <OfflinePortal
                     offlinePortalData={offline.offlinePortalData}

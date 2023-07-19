@@ -11,13 +11,15 @@ import News from '@/components/News';
 import Law from '@/components/Law';
 import Environment from '@/components/Environment';
 import Admin from '@/components/Admin';
+import Online from '@/components/Online';
+import Publicity from '@/components/Publicity';
 import { Routes, Route } from 'react-router';
+import './index.css'
 
 const mineRoutes = () => {
   return (
 
-    <Fragment>
-    
+    <div className='route_box'>
     <Routes>
       <Route index path="/" element={<Main />} />
       <Route path="smart/" element={<SmartScreen />} />
@@ -26,12 +28,14 @@ const mineRoutes = () => {
       <Route path="news/" element={<News />} />
       <Route path="law/" element={<Law />} />
       <Route path="environment/" element={<Environment />} />
+      <Route path="online/" element={<Online />} />
+      <Route path="publicity/" element={<Publicity />} />
       <Route path="admin/" element={<Admin />} />
         {/* <Route path="/detail"  element={<Detail/>} />
         <Route path="/home"  element={<Home/>} />
         <Route path="/redux"  element={<ReduxPractice/>} /> */}
     </Routes>
-   </Fragment>
+   </div>
   );
 }
 

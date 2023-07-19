@@ -5,7 +5,7 @@ import LeftPage from './leftPage/index.jsx'
 import RightPage from './rightPage'
 import CenterPage from './centerPage'
 import { connect } from 'react-redux'
-import './index.css'
+import styles from './index.module.css'
 import Left from './Left'
 import Right from './Right'
 import Center from './Center'
@@ -24,10 +24,11 @@ import Center from './Center'
     //   <RightPage />
     // </IndexPageContent>
     // </IndexPageStyle>
-    <div className="main">
+    <div className={styles.main}>
         <Left></Left>
-        <Center className='center-page'></Center>
+        <Center className={styles.center_page}></Center>
         <Right></Right>
+      {/* kkkk */}
     </div>
   )
  }

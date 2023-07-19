@@ -1,0 +1,510 @@
+/**
+ * 
+ * 
+ *  
+          <iframe
+        id="iframe_key"
+        src="/Chart.html"
+        frameborder="0"
+        width="100%"
+        height="100%"
+      ></iframe>
+ */
+import React, { Fragment } from "react";
+import "./index.css";
+import MyFooter from "../MyFooter";
+import MyEcharts from "../../common/MyEcharts";
+import { Card, Carousel } from "antd";
+export default function () {
+  const contentStyle = {
+    height: "300px",
+    // width:'80%',
+    color: "#fff",
+    lineHeight: "160px",
+    textAlign: "center",
+    // background: "#364d79",
+    // border: '1px solid  rgba(255, 255, 255, 0.2)',
+    // margin:'4px 0',
+    marginTop:'20px'
+    // margin:'0 auto'
+  };
+  const picStyle = {
+    height: "300px",
+    width: '94%',
+    margin:'0 auto',
+  }
+  const titStyle = {
+    background: '#fff',
+    display: 'flex',
+    justifyContent: 'flex-start',
+    // margin: '0 4px',
+    background: 'linear-gradient(blue, pink)',
+    color:'#fff'
+    
+  }
+  const options1 = {
+    xAxis: {
+      type: "category",
+      data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      splitLine: {
+        //修改背景线条样式
+        show: false, //是否展示
+        lineStyle: {
+          color: "#fff", //线条颜色
+          type: "dashed", //线条样式，默认是实现，dashed是虚线
+        },
+      },
+    },
+    yAxis: {
+      type: "value",
+    },
+    series: [
+      {
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: "line",
+        smooth: true,
+      },
+    ],
+  };
+  return (
+    <Fragment>
+      <video className="videoTag" autoPlay loop muted>
+        <source src={require("@/assets/bg.mp4")} type="video/mp4" />
+      </video>
+
+      <div className="party_main">
+        <div className="party_main_box">
+          <div className="party_main_box_l">
+            <div className="party_main_box_p">
+              <MyEcharts options={options1} />
+            </div>
+            <div className="party_main_box_p">kk</div>
+          </div>
+          <div className="party_main_box_m">
+            {/* <div className='party_main_box_m_t'>
+              智慧党建
+            </div> */}
+            <div className="party_main_box_m_t2">
+              <ul>
+                <li>
+                  党委:
+                  <span
+                    style={{
+                      fontSize: "30px",
+                      marginLeft: "4px",
+                      color: "#FAAB11",
+                    }}
+                  >
+                    383个
+                  </span>
+                </li>
+                <li>
+                  党支书:
+                  <span
+                    style={{
+                      fontSize: "30px",
+                      marginLeft: "4px",
+                      color: "#FAAB11",
+                    }}
+                  >
+                    383个
+                  </span>
+                </li>
+                <li>
+                  一级党支部:
+                  <span
+                    style={{
+                      fontSize: "30px",
+                      marginLeft: "4px",
+                      color: "#FAAB11",
+                    }}
+                  >
+                    383个
+                  </span>
+                </li>
+                <li>
+                  二级党支部:
+                  <span
+                    style={{
+                      fontSize: "30px",
+                      marginLeft: "4px",
+                      color: "#FAAB11",
+                    }}
+                  >
+                    383个
+                  </span>
+                </li>
+                <li>
+                  党员人数:
+                  <span
+                    style={{
+                      fontSize: "30px",
+                      marginLeft: "4px",
+                      color: "#FAAB11",
+                    }}
+                  >
+                    383人
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="party_main_box_m_c">
+              <div className="party_main_box_m_c_c">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                {/* autoplay */}
+                 <Carousel autoplay >
+                  <div>
+                    <div style={contentStyle} >
+                      <img style={picStyle} src={"https://syb.shanxiszxc.com:8088/digit-village/szxcfile/16837978084737205.png"} alt="" />
+                    </div>
+                    <div style={titStyle}>90000</div>
+                  </div>
+                  <div>
+                  <div style={contentStyle}>
+                      <img style={picStyle} src={"https://syb.shanxiszxc.com:8088/digit-village/szxcfile/16837978084737205.png"} alt="" />
+                    </div>
+                    <div style={titStyle}>90000</div>
+                  </div>
+                  <div>
+                  <div style={contentStyle}>
+                      <img style={picStyle} src={"https://syb.shanxiszxc.com:8088/digit-village/szxcfile/16837978084737205.png"} alt="" />
+                    </div>
+                    <div style={titStyle}>90000</div>
+                  </div>
+                  <div>
+                  <div style={contentStyle}>
+                      <img style={picStyle} src={"https://syb.shanxiszxc.com:8088/digit-village/szxcfile/16837978084737205.png"} alt="" />
+                    </div>
+                    <div style={titStyle}>90000</div>
+                  </div>
+                </Carousel>
+              </div>
+            </div>
+
+            <div className="party_main_box_m_t3">99</div>
+          </div>
+          <div className="party_main_box_r">
+            <div className="party_main_box_p">ff</div>
+            <div className="party_main_box_p">f99</div>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  );
+}
+
+///////////
+
+
+
+.party_main {
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  /* margin-top: 60px; */
+  padding-top: 60px;
+  background-size: cover;
+  width: 100vw;
+  height:100vh;
+  display: flex;
+
+}
+.party_main_box {
+/* background: linear-gradient(#dc1d1d, rgb(234, 114, 134)); */
+}
+.party_main > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: url('../../assets/pageBg.png') center center no-repeat;
+  /* background-color: rgb(228, 149, 149); */
+  /* opacity: .9; */
+  height:100%;
+  color:#fff;
+}
+.center-page {
+  flex:1
+}
+.party_main_box {
+  display: flex;
+  /* flex-direction: column; */
+  min-height: 100vh;
+}
+.party_main_box_l{
+  flex: 0 0 auto;
+  /* background-color: pink; */
+  min-width: 26%;
+  /* opacity: .2; */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  /* border-radius: 25px; */
+  box-shadow:inset 0 0 6px rgba(255, 255, 255, 0.2);
+
+}
+.party_main_box_m{
+  flex: 1 1 auto;
+
+  /* background-color: aqua; */
+}
+.party_main_box_r{
+  flex: 0 0 auto;
+    /* background-color: lightgreen; */
+    min-width: 26%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    box-shadow:inset 0 0 6px rgba(255, 255, 255, 0.2);
+}
+/*  108 223 248 */
+.party_main_box_p {
+  height: 46%;
+  position: relative;
+  border: 2px solid #39548e;
+ margin-bottom: 10px;
+ margin-top: 10px;
+ background: rgba(95, 102, 159, 0.2);
+ box-shadow: 2px 1px 2px  rgb(94, 113, 114);
+ /* border-radius: 20px; */
+
+ /* border-radius: 10%; */
+}
+.party_main_box_p::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+  /* border-radius: 10%; */
+  border-right: 2px solid #6CDFF8;
+  border-top: 2px solid #6CDFF8;
+  content: "";
+
+
+}
+.party_main_box_p::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #6CDFF8;
+  border-top: 2px solid #6CDFF8;
+  content: "";
+}
+.party_main_box_m_t {
+  padding: 10px;
+  margin: 10px;
+  color: #956505;
+  font-size: 30px;
+}
+.party_main_box_m_t2 {
+  margin-top: 20px;
+}
+.party_main_box_m_t2 ul {
+  display: flex;
+  justify-content: space-around;
+}
+.party_main_box_m_t2 ul li {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  color: yellow;
+  /* color: rgb(255, 157, 0); */
+  text-align: center;
+  height: 36px;
+  font-size: 14px;
+  line-height: 36px;
+
+}
+.party_main_box_m_t3 {
+  height: 36%;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  background: rgba(95, 102, 159, 0.2);
+  border: 2px solid #182747;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  /* box-shadow: 2px 1px 2px  rgb(94, 113, 114); */
+  border: 2px solid #39548e;
+  flex: 1;
+}
+.party_main_box_m_t3::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+  /* border-radius: 10%; */
+  border-right: 2px solid #6CDFF8;
+  border-top: 2px solid #6CDFF8;
+  content: "";
+}
+.party_main_box_m_t3::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #6CDFF8;
+  border-top: 2px solid #6CDFF8;
+  content: "";
+}
+
+.party_main_box_m_c {
+  width: 600px;
+  margin: 0 auto;
+  /* border-radius: 2%; */
+  /* border: 1px solid #fff; */
+
+  /* height: 720px; */
+}
+.party_main_box_m_c::after{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+  /* border-radius: 10%; */
+  border-right: 2px solid #6CDFF8;
+  border-top: 2px solid #6CDFF8;
+  content: "";
+}
+.party_main_box_m_c::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #6CDFF8;
+  border-top: 2px solid #6CDFF8;
+  content: "";
+}
+.party_main_box_m_c_c {
+  /* background-color: #182747; */
+  /* padding: 2px; */
+  /* margin-top: 20px; */
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+
+}
+
+.party_main_box_m_c_c :before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.party_main_box_m_c_c :hover:before{
+  left:-50%;
+  width:600px;
+  transform: skewX(-5deg);
+}
+
+
+.party_main_box_m_c_c  .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid #f0a591;
+  padding:20px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  
+}
+
+.party_main_box_m_c_c span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  
+}
+
+.party_main_box_m_c_c span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.party_main_box_m_c_c span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.party_main_box_m_c_c span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.party_main_box_m_c_c span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+
+.party_main_box_m_c_c span::before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform:scaleX(0);
+    transform-origin: left;
+    }
+    50%
+    {
+      transform:scaleX(1);
+    transform-origin: left;
+    }
+    50.1%
+    {
+      transform:scaleX(1);
+    transform-origin: right;
+      
+    }
+    
+    100%
+    {
+      transform:scaleX(0);
+    transform-origin: right;
+      
+    }
+}
+ 
+ video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; 
+  width: auto;
+  height: auto; 
+  z-index: -100; 
+  -webkit-filter: grayscale(20%);
+}
+
+/* 239 143 95 */

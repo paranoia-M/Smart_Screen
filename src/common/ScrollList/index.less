@@ -1,0 +1,43 @@
+#notice {
+  position: fixed;
+  top: 70px;
+  width: 100vw;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 20px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: @disabled;
+  z-index: 1000;
+  .notice {
+      &-context {
+          color: #000;
+          font-size: 14px;
+          width: calc(100% - 30px);
+          text-align: center;
+          overflow: hidden;
+          display: flex;
+      }
+      &-scroll {
+          display: inline-block;
+          white-space: nowrap;
+          transition: all 0.3;
+      }
+      &-noscroll {
+          justify-content: center;
+      }
+  }
+  .iconclose {
+      cursor: pointer;
+      font-size: 14px;
+      color: @white-close; //关闭颜色
+      &:hover {
+          color: @white-hover; //关闭颜色
+      }
+  }
+}
+.notice-hidden {
+  display: none !important;
+}
+

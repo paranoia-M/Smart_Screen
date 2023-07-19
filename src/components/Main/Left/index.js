@@ -4,7 +4,7 @@ import { ModuleTitle } from '@/style/globalStyledSet';
 import { BorderBox12, BorderBox13 } from '@jiaminghi/data-view-react';
 import TrafficSituation from './charts/TrafficSituation';
 import UserSituation from './charts/UserSituation';
-import './index.css';
+import styles from './index.module.css';
 
 export default class index extends Component {
 
@@ -94,22 +94,22 @@ export default class index extends Component {
   render() {
     const { userSitua, trafficSitua, accessFrequency, peakFlow } = this.state;
     return (
-      <div className='left_page'>
-        <div className='left_top_box' style={{height:'48%'}}>
-        <BorderBox12 className='left-top-borderBox12'>
-            <div className='left-top'>
+      <div className={styles.left_page}>
+        <div className={styles.left_top_box} style={{height:'48%'}}>
+        <BorderBox12 className={styles.left_top_borderBox12}>
+            <div className={styles.left_top}>
               <ModuleTitle>
-                <i className='iconfont'>&#xe78f;</i>
+                <i className={styles.iconfont}>&#xe78f;</i>
                 <span>今日流量态势</span>
               </ModuleTitle>
-              <div className='title-dis'>
+              <div className={styles.title_dis}>
                 <span>
                   平均接纳次数(小时):
-                  <span className='title-dis-keyword'>{accessFrequency}次</span>
+                  <span className={styles.title_dis_keyword}>{accessFrequency}次</span>
                 </span>
                 <span>
                   流量峰值:
-                  <span className='title-dis-keyword'>{peakFlow}M</span>
+                  <span className={styles.title_dis_keyword}>{peakFlow}M</span>
                 </span>
               </div>
               {/* 图表 */}
@@ -120,11 +120,11 @@ export default class index extends Component {
          
         
          {/* 底部图表 */}
-         <div className='left_bottom_box' style={{height:'96%',paddingTop:"10px"}}> 
-          <BorderBox13 className='left-bottom-borderBox13'>
-            <div className='left-bottom'>
-              <ModuleTitle className='title' style={{marginTop:'10px',marginBottom:'10px'}}>
-                <i className='iconfont'>&#xe88e;</i>
+         <div className={styles.left_bottom_box} style={{height:'96%',paddingTop:"10px"}}> 
+          <BorderBox13 className={styles.left_bottom_borderBox13}>
+            <div className={styles.left_bottom}>
+              <ModuleTitle className={styles.title} style={{marginTop:'10px',marginBottom:'10px'}}>
+                <i className={styles.iconfont}>&#xe88e;</i>
                 <span style={{fontSize:'12px'}}>略阳县企业监控在线情况</span>
        
               </ModuleTitle>

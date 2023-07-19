@@ -13,28 +13,28 @@ import ChildSix from './ChildSix';
 const tabBar = [
   {
     id: 1,
-    target: "智慧天气",
+    target: "实时环境数据",
   },
   {
     id: 2,
-    target: "智慧天气",
+    target: "测点实时数据",
   },
-  {
-    id: 3,
-    target: "智慧天气智慧",
-  },
-  {
-    id: 4,
-    target: "智慧天气",
-  },
+  // {
+  //   id: 3,
+  //   target: "新闻发布",
+  // },
+  // {
+  //   id: 4,
+  //   target: "法律普及",
+  // },
   {
     id: 5,
-    target: "智慧天气",
+    target: "相关知识",
   },
-  {
-    id: 6,
-    target: "智慧天气",
-  },
+  // {
+  //   id: 6,
+  //   target: "智慧天气",
+  // },
 ];
 export default function () {
   const handleClick = (item) => {
@@ -66,8 +66,9 @@ export default function () {
     <Fragment>
       <div className="box">
         <div className="container">
-          <div className="con_main">
-           <HandleRender/>
+          <div className="con_mains">
+ 
+            <HandleRender/>
           </div>
           <div className="con_tab">
             {tabBar.map((item) => {

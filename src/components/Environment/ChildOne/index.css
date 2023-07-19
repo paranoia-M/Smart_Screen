@@ -1,18 +1,218 @@
 .one {
-  
+position: relative;
+text-align: center;
+overflow: hidden;
+height: 100%;
+/* margin-top: 60px; */
+/* overflow-y: scroll; */
+
 }
-.one .one_top{
+.one .one_t{
   display: flex;
 }
-.one .one_top .one_top_tit{
+.one .one_t .one_top_tit{
   color: #1e1c25;
   font-size: 34px;
   font-weight: bold;
 
 }
-.one .one_top .one_top{
- width: 50%;
+.one .one_top{
+  display: flex;
+  justify-content: space-around;
+ /* height:600px; */
+ /* width: 60%; */
+ overflow: hidden;
+
 }
-.one .one_top .one_top_right{
- width: 50%;
+.one .one_top .one_top_left{
+  /* width: 60%; */
+margin: 0 10px;
+padding: 0 10px;
+padding-bottom: 10px;
+  background: rgba(224, 240, 254);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 25px;
+  box-shadow:0 4px 10px 0 rgb(155, 150, 150);
+  overflow: hidden;
+
+
+
+  /* background-color: #1e1c25; */
+}
+.one .one_top .one_top_left .one_top_left_top{
+
+display: flex;
+ color: #1B1C21;
+ font-size: 26px;
+ padding: 0 10px;
+}
+.one_top_left_top_temp {
+  font-size: 150px;
+}
+
+.one_top_left_top_mid {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 16px;
+  margin-bottom: 28px;
+}
+.one_top_left_top_mid div {
+margin-top: 10px;
+ 
+}
+.one_top_left_top_ql{
+  margin-top: 20px;
+  background-color: #00E400;
+  padding: 6px 20px;
+  border-radius: 10%;
+}
+
+.one_top_left_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* padding:  20px 0; */
+  padding-bottom: 10px;
+  height: 100%;
+  padding: 0 10px;
+  background-color: rgb(42, 99, 165);
+
+  border-radius: 10px;
+  /* border-top: 2px solid #fff; */
+  /* padding-top: 10px; */
+
+}
+.one_top_left_bottom_item {
+  display: flex;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+}
+.one_top_left_bottom .my_p {
+ /* width: 50%; */
+  /* height: 30px; */
+  height: calc(100% / 15);
+  text-align: center;
+  padding-top: 10px;
+  /* line-height: calc(100% / 16); */
+  border-top: 1px solid #9b9595;
+  color: #fff;
+  font-size: 18px;
+  /* display:inline-block; */
+  text-align: justify;
+ 
+}
+.right_p {
+
+  text-align: left;
+  float: left;
+  left: 0;
+  font-size: 14px;
+  
+}
+.split {
+  height: 16px;
+  background-color: #00E400;
+  width: 4px;
+  text-align: center-top;
+  margin: 6px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  
+}
+
+ .one_top_right{
+ width: 46%;
+display: flex;
+flex-wrap: wrap;
+}
+.one_top_right_box {
+  width:40%;
+   font-style: italic;
+   font-size: 20px;
+   color: #fff;
+  border-radius: 20px;
+    background-color: rgba(108, 79, 79, 0.5);
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 10px 0 rgb(155, 150, 150);
+}
+.one_top_right_box_top {
+  display: flex;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.one_top_right_box_mid {
+  float: left;
+  left: 0;
+  margin-top:30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.one_bottom {
+  width: 94%;
+  border-radius: 20px;
+  margin-top: 220px;
+  position: relative;
+  /* top: 50%; */
+  left: 50%;
+  /* height: 100px; */
+  box-shadow: 0 4px 10px 0 rgb(155, 150, 150);
+  transform: translate(-50%, -50%);
+   background-color:rgba(108, 79, 79, 0.5);
+}
+.one_bottom_tit {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  padding: 20px 0;
+  padding-left: 20px;
+  align-items: flex-start;
+  font-size: 24px;
+  
+}
+.one_bottom_tit_label {
+  /* border: 1px solid rgb(46, 120, 113); */
+  color: rgba(108, 79, 79, 0.5);
+  font-weight: bold;
+  margin-right: 10px;
+
+}
+.one_bottom_main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #6e6f6e;
+  color: #fff;
+}
+.one_bottom_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 4px;
+  border-left: 1px solid #fff;
+}
+.one_bottom_list_top {
+  display: flex;
+  padding-bottom: 10px;
+}
+.one_bottom_list_top_l {
+  /* width: 50%; */
+  /* padding-bottom: 10px; */
+}
+
+.one_bottom_list_mid {
+  float: left;
+  left: 0;
+  /* width: 100%; */
+  padding:  10px 0;
+  height: 40px;
+  margin-right: 10px;
+
 }

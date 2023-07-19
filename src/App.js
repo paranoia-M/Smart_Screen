@@ -13,12 +13,10 @@ function App() {
   return (
       <Provider store={store}>
       <div className="App">
-      <Iconstyle></Iconstyle>
-      <Globalstyle></Globalstyle>
       <HeaderNav/>
-      <div className='container'>
+      {/* <div className='container'> */}
       {mineRoutes()}
-    </div>
+    {/* </div> */}
    </div>
     </Provider>
   );

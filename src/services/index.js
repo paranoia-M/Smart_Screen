@@ -26,5 +26,23 @@ export const getRightPageData = async () => {
 export const getCurWeather = async () => {
   return axios.get('http://api.help.bj.cn/apis/weather/?id=101110802').then(response => {
     return response;
-  });
+  }).catch((err) => err);
+};
+// 获取天气预警
+export const getCurQuality = async () => {
+  return axios.get('http://api.help.bj.cn/apis/aqi2/?id=101110801').then(response => {
+    return response;
+  }).catch((err) => err);
+};
+// 获取近六日天气
+export const getSixWeather = async () => {
+  return axios.get('http://api.help.bj.cn/apis/wap40D/?id=101110802').then(response => {
+    return response;
+  }).catch((err) => err);
+};
+// 获取生活指数
+export const getLife = async () => {
+  return axios.get('http://api.help.bj.cn/apis/life29/?id=101110802').then(response => {
+    return response;
+  }).catch((err) => err);
 };
